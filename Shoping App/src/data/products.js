@@ -1,0 +1,360 @@
+// Realistic Mock Grocery Dataset for Blinkit-style app
+
+export const CATEGORIES = [
+  { id: 'all', name: 'All Items', icon: '🛒' },
+  { id: 'vegetables', name: 'Vegetables & Fruits', icon: '🥦' },
+  { id: 'dairy', name: 'Dairy, Bread & Eggs', icon: '🥛' },
+  { id: 'munchies', name: 'Snacks & Munchies', icon: '🍿' },
+  { id: 'drinks', name: 'Cold Drinks & Juices', icon: '🥤' },
+  { id: 'instant', name: 'Instant & Frozen Food', icon: '🍜' },
+  { id: 'staples', name: 'Atta, Rice & Oil', icon: '🌾' },
+  { id: 'cleaning', name: 'Cleaning & Household', icon: '🧹' }
+];
+
+export const PRODUCTS = [
+  {
+    id: 'p1',
+    name: 'Fresh Onion (Pyaz)',
+    category: 'vegetables',
+    unit: '1 kg',
+    price: 32,
+    originalPrice: 40,
+    discount: '20% OFF',
+    rating: 4.8,
+    deliveryTime: '10 MINS',
+    image: 'https://images.unsplash.com/photo-1618512496248-a07fe83aa8cb?w=500&auto=format&fit=crop&q=80',
+    description: 'Farm fresh red onions, carefully sourced for cooking everyday Indian meals.'
+  },
+  {
+    id: 'p2',
+    name: 'Hybrid Tomato (Tamatar)',
+    category: 'vegetables',
+    unit: '500 g',
+    price: 24,
+    originalPrice: 30,
+    discount: '20% OFF',
+    rating: 4.7,
+    deliveryTime: '8 MINS',
+    image: 'https://images.unsplash.com/photo-1592924357228-91a4daadcfea?w=500&auto=format&fit=crop&q=80',
+    description: 'Juicy and ripe red tomatoes ideal for curries, salads, and soups.'
+  },
+  {
+    id: 'p3',
+    name: 'Fresh Potato (Aloo)',
+    category: 'vegetables',
+    unit: '1 kg',
+    price: 28,
+    originalPrice: 35,
+    discount: '20% OFF',
+    rating: 4.9,
+    deliveryTime: '10 MINS',
+    image: 'https://images.unsplash.com/photo-1518977676601-b53f82aba655?w=500&auto=format&fit=crop&q=80',
+    description: 'High-quality cooking potatoes, versatile for snacks, fries, and gravies.'
+  },
+  {
+    id: 'p4',
+    name: 'Robusta Banana',
+    category: 'vegetables',
+    unit: '1 pack (approx. 500g)',
+    price: 35,
+    originalPrice: 45,
+    discount: '22% OFF',
+    rating: 4.6,
+    deliveryTime: '10 MINS',
+    image: 'https://images.unsplash.com/photo-1571771894821-ce9b6c11b08e?w=500&auto=format&fit=crop&q=80',
+    description: 'Naturally ripened, sweet Robusta bananas rich in potassium.'
+  },
+  {
+    id: 'p5',
+    name: 'Amul Taaza Toned Milk Pouch',
+    category: 'dairy',
+    unit: '500 ml',
+    price: 27,
+    originalPrice: 27,
+    discount: null,
+    rating: 4.9,
+    deliveryTime: '8 MINS',
+    image: 'https://images.unsplash.com/photo-1550583724-b2692b85b150?w=500&auto=format&fit=crop&q=80',
+    description: 'Pasteurised toned milk with wholesome cream and nutrients.'
+  },
+  {
+    id: 'p6',
+    name: 'Amul Pasteurised Butter',
+    category: 'dairy',
+    unit: '100 g',
+    price: 58,
+    originalPrice: 60,
+    discount: '3% OFF',
+    rating: 4.9,
+    deliveryTime: '10 MINS',
+    image: 'https://images.unsplash.com/photo-1589985270826-4b7bb135bc9d?w=500&auto=format&fit=crop&q=80',
+    description: 'Iconic salty Amul butter, perfect for toast, parathas, and cooking.'
+  },
+  {
+    id: 'p7',
+    name: 'Amul Fresh Paneer',
+    category: 'dairy',
+    unit: '200 g',
+    price: 92,
+    originalPrice: 100,
+    discount: '8% OFF',
+    rating: 4.8,
+    deliveryTime: '10 MINS',
+    image: 'https://images.unsplash.com/photo-1631452180519-c014fe946bc7?w=500&auto=format&fit=crop&q=80',
+    description: 'Soft and hygienic cottage cheese cubes for delicious paneer dishes.'
+  },
+  {
+    id: 'p8',
+    name: 'Harvest Gold White Bread',
+    category: 'dairy',
+    unit: '400 g',
+    price: 45,
+    originalPrice: 50,
+    discount: '10% OFF',
+    rating: 4.7,
+    deliveryTime: '9 MINS',
+    image: 'https://images.unsplash.com/photo-1509440159596-0249088772ff?w=500&auto=format&fit=crop&q=80',
+    description: 'Soft sliced white bread for breakfast toasts and sandwiches.'
+  },
+  {
+    id: 'p9',
+    name: 'Table White Eggs',
+    category: 'dairy',
+    unit: '6 pieces',
+    price: 48,
+    originalPrice: 60,
+    discount: '20% OFF',
+    rating: 4.8,
+    deliveryTime: '10 MINS',
+    image: 'https://images.unsplash.com/photo-1516467508483-a7212febe31a?w=500&auto=format&fit=crop&q=80',
+    description: 'Farm-fresh protein rich white eggs safely packed.'
+  },
+  {
+    id: 'p10',
+    name: "Lay's India's Magic Masala Potato Chips",
+    category: 'munchies',
+    unit: '50 g',
+    price: 20,
+    originalPrice: 20,
+    discount: null,
+    rating: 4.9,
+    deliveryTime: '7 MINS',
+    image: 'https://images.unsplash.com/photo-1566478989037-eec170784d0b?w=500&auto=format&fit=crop&q=80',
+    description: 'Crunchy potato chips packed with spicy Indian spice blend.'
+  },
+  {
+    id: 'p11',
+    name: 'Haldiram Bhujia Sev',
+    category: 'munchies',
+    unit: '200 g',
+    price: 55,
+    originalPrice: 60,
+    discount: '8% OFF',
+    rating: 4.8,
+    deliveryTime: '10 MINS',
+    image: 'https://images.unsplash.com/photo-1621939514649-280e2ee25f60?w=500&auto=format&fit=crop&q=80',
+    description: 'Crispy fried moth bean flour snack seasoned with traditional spices.'
+  },
+  {
+    id: 'p12',
+    name: 'Doritos Nacho Cheese Tortilla Chips',
+    category: 'munchies',
+    unit: '82.5 g',
+    price: 50,
+    originalPrice: 50,
+    discount: null,
+    rating: 4.7,
+    deliveryTime: '9 MINS',
+    image: 'https://images.unsplash.com/photo-1566478989037-eec170784d0b?w=500&auto=format&fit=crop&q=80',
+    description: 'Bold cheesy flavor combined with classic crunch.'
+  },
+  {
+    id: 'p13',
+    name: 'Coca-Cola Soft Drink Can',
+    category: 'drinks',
+    unit: '300 ml',
+    price: 40,
+    originalPrice: 40,
+    discount: null,
+    rating: 4.9,
+    deliveryTime: '6 MINS',
+    image: 'https://images.unsplash.com/photo-1622483767028-3f66f32aef97?w=500&auto=format&fit=crop&q=80',
+    description: 'Refreshing carbonated soft drink served chilled.'
+  },
+  {
+    id: 'p14',
+    name: 'Real Fruit Power Mixed Fruit Juice',
+    category: 'drinks',
+    unit: '1 L',
+    price: 115,
+    originalPrice: 135,
+    discount: '15% OFF',
+    rating: 4.6,
+    deliveryTime: '10 MINS',
+    image: 'https://images.unsplash.com/photo-1613478223719-2ab802602423?w=500&auto=format&fit=crop&q=80',
+    description: 'Delightful blend of 9 fruits rich in natural vitamins.'
+  },
+  {
+    id: 'p15',
+    name: 'Sprite Lemon-Lime Soft Drink Bottle',
+    category: 'drinks',
+    unit: '750 ml',
+    price: 45,
+    originalPrice: 45,
+    discount: null,
+    rating: 4.8,
+    deliveryTime: '7 MINS',
+    image: 'https://images.unsplash.com/photo-1625772299848-391b6a87d7b3?w=500&auto=format&fit=crop&q=80',
+    description: 'Clear, crisp lemon-lime refreshment to quench your thirst.'
+  },
+  {
+    id: 'p16',
+    name: 'Maggi 2-Minute Masala Noodles Pack of 4',
+    category: 'instant',
+    unit: '280 g',
+    price: 56,
+    originalPrice: 60,
+    discount: '6% OFF',
+    rating: 4.9,
+    deliveryTime: '8 MINS',
+    image: 'https://images.unsplash.com/photo-1612927601601-6638404737ce?w=500&auto=format&fit=crop&q=80',
+    description: 'India favorite instant noodles made with quality spices.'
+  },
+  {
+    id: 'p17',
+    name: 'Knorr Classic Tomato Soup',
+    category: 'instant',
+    unit: '53 g',
+    price: 40,
+    originalPrice: 45,
+    discount: '11% OFF',
+    rating: 4.5,
+    deliveryTime: '10 MINS',
+    image: 'https://images.unsplash.com/photo-1547592166-23ac45744acd?w=500&auto=format&fit=crop&q=80',
+    description: 'Delicious thick tomato soup with crunchy croutons.'
+  },
+  {
+    id: 'p18',
+    name: 'Aashirvaad Shuddh Chakki Atta',
+    category: 'staples',
+    unit: '5 kg',
+    price: 245,
+    originalPrice: 280,
+    discount: '12% OFF',
+    rating: 4.9,
+    deliveryTime: '12 MINS',
+    image: 'https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?w=500&auto=format&fit=crop&q=80',
+    description: '100% pure whole wheat flour processed with traditional chakki process.'
+  },
+  {
+    id: 'p19',
+    name: 'Fortune Sunlite Refined Sunflower Oil',
+    category: 'staples',
+    unit: '1 L Pouch',
+    price: 135,
+    originalPrice: 160,
+    discount: '15% OFF',
+    rating: 4.8,
+    deliveryTime: '10 MINS',
+    image: 'https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?w=500&auto=format&fit=crop&q=80',
+    description: 'Light and healthy cooking oil enriched with Vitamin A & D.'
+  },
+  {
+    id: 'p20',
+    name: 'India Gate Basmati Rice Feast Rozzana',
+    category: 'staples',
+    unit: '1 kg',
+    price: 110,
+    originalPrice: 140,
+    discount: '21% OFF',
+    rating: 4.7,
+    deliveryTime: '10 MINS',
+    image: 'https://images.unsplash.com/photo-1586201375761-83865001e31c?w=500&auto=format&fit=crop&q=80',
+    description: 'Aromatic long grain basmati rice suitable for daily meals and biryanis.'
+  },
+  {
+    id: 'p21',
+    name: 'Surf Excel Easy Wash Detergent Powder',
+    category: 'cleaning',
+    unit: '1 kg',
+    price: 140,
+    originalPrice: 160,
+    discount: '12% OFF',
+    rating: 4.8,
+    deliveryTime: '10 MINS',
+    image: 'https://images.unsplash.com/photo-1585830810419-7ac6e38480cc?w=500&auto=format&fit=crop&q=80',
+    description: 'Removes tough stains easily without dulling clothes.'
+  },
+  {
+    id: 'p22',
+    name: 'Vim Dishwash Gel Lemon',
+    category: 'cleaning',
+    unit: '250 ml',
+    price: 60,
+    originalPrice: 65,
+    discount: '7% OFF',
+    rating: 4.9,
+    deliveryTime: '9 MINS',
+    image: 'https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=500&auto=format&fit=crop&q=80',
+    description: 'Powerful lemon formula that cuts through stubborn grease on utensils.'
+  },
+  {
+    id: 'p23',
+    name: 'Dettol Original Liquid Handwash Refill',
+    category: 'cleaning',
+    unit: '680 ml',
+    price: 110,
+    originalPrice: 130,
+    discount: '15% OFF',
+    rating: 4.9,
+    deliveryTime: '10 MINS',
+    image: 'https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=500&auto=format&fit=crop&q=80',
+    description: 'Trusted 99.9% germ protection hand hygiene refill pack.'
+  },
+  {
+    id: 'p24',
+    name: 'Epigamia Greek Yogurt Natural',
+    category: 'dairy',
+    unit: '90 g',
+    price: 40,
+    originalPrice: 45,
+    discount: '11% OFF',
+    rating: 4.7,
+    deliveryTime: '10 MINS',
+    image: 'https://images.unsplash.com/photo-1488477181946-6428a0291777?w=500&auto=format&fit=crop&q=80',
+    description: 'Thick, creamy high-protein Greek yogurt without preservatives.'
+  }
+];
+
+export const BANNERS = [
+  {
+    id: 1,
+    title: '⚡ 10 Minute Grocery Delivery',
+    subtitle: 'Fresh vegetables, milk, snacks & household essentials at your doorstep',
+    btnText: 'Shop Fresh',
+    bg: 'linear-gradient(135deg, #0c831f 0%, #15a02e 100%)',
+    textColor: '#ffffff'
+  },
+  {
+    id: 2,
+    title: '🥛 Morning Dairy & Breakfast Deals',
+    subtitle: 'Get up to 25% OFF on Amul Butter, Bread, Milk & Eggs',
+    btnText: 'Order Breakfast',
+    bg: 'linear-gradient(135deg, #2563eb 0%, #3b82f6 100%)',
+    textColor: '#ffffff'
+  },
+  {
+    id: 3,
+    title: '🍿 Monsoon Snack Craving Festival',
+    subtitle: 'Flat ₹50 OFF on chips, cold drinks, instant noodles & namkeen',
+    btnText: 'Claim Coupon',
+    bg: 'linear-gradient(135deg, #d97706 0%, #f59e0b 100%)',
+    textColor: '#ffffff'
+  }
+];
+
+export const COUPONS = [
+  { code: 'WELCOME50', discount: 50, minOrder: 199, description: '₹50 OFF on first order above ₹199' },
+  { code: 'FRESH10', discountPercent: 10, maxDiscount: 40, minOrder: 250, description: '10% OFF up to ₹40 on groceries' },
+  { code: 'FREEDEL', discount: 25, minOrder: 99, description: 'Free Delivery Discount ₹25 OFF' }
+];
